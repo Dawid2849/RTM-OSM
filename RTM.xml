@@ -3,7 +3,7 @@
          icon="https://rtm.erzeszow.pl/wp-content/uploads/2025/05/cropped-cropped-favicon_ZTM-02-32x32.png"
          description="Preset for Rzeszowski Transport Miejski - public transport network in Rzeszów."
          shortdescription="Rzeszowski Transport Miejski"
-         author="Dawid2849"
+         author="Dawid2849, Paweł_M"
          version="0.1"
          baselanguage="English">
     <group name="Buses" pl.name="Autobusy">
@@ -15,6 +15,7 @@
             <key key="operator:short" value="ZTM Rzeszów"/>
             <key key="operator:type" value="public"/>
             <key key="operator:wikidata" value="Q141755570"/>
+            <key key="public_transport"/>  <!--For deleting public_transport=platform from nodes-->
 
             <text key="name" text="Bus Stop name" pl.text="Nazwa przystanku"/>
             <text key="ref" text="Stop ID" pl.text="Numer słupka"/>
@@ -31,16 +32,21 @@
             <space/>
             <check key="passenger_information_display" text="Passenger information system"
                    pl.text="Tablica elektroniczna"/>
-            <combo key="traffic_sign" text="Traffic sign" pl.text="Znak drogowy" values="PL:D-15,no"/>
+            <combo key="traffic_sign" text="Traffic sign" pl.text="Znak drogowy">
+                <list_entry value="PL:D-15" display_value="yes" pl.display_value="tak"/>
+                <list_entry value="no" display_value="no" pl.display_value="nie"/>
+            </combo>
             <combo key="pole" text="Pole" pl.text="Słupek" values="traffic_sign,totem,no"/>
 
             <space/>
+            <check key="check_date" text="Check date" pl.text="Data sprawdzenia"/>
             <check key="shelter" text="Shelter" pl.text="Wiata"/>
             <check key="covered" text="Covered (ex. shelter)" pl.text="Zadaszenie (poza wiatą)" default="off"/>
             <check key="bench" text="Bench" pl.text="Ławka"/>
             <check key="bin" text="Trash bin" pl.text="Śmietnik"/>
             <check key="lit" text="Lit" pl.text="Oświetlony"/>
             <check key="tactile_paving" text="Tactile paving" pl.text="Ścieżka dotykowa"/>
+            <combo key="wheelchair" text="Wheelchair access" pl.text="Dostęp na wózku" values="yes,limited,no"/>
 
             <space/>
             <check key="request_stop" text="On demand" pl.text="Na żądanie"/>
@@ -48,6 +54,17 @@
             <space/>
             <text key="gtfs:stop_id" text="GTFS Stop ID"/>
             <text key="gtfs:stop_name" text="GTFS Stop Name"/>
+        </item>
+
+        <!--TODO: shelters, platforms, stop positions, routes, stop areas, bus bays, ticket vending machines, maybe sth else...-->
+
+    </group>
+
+    <separator/>
+
+    <group name="Car parks" pl.name="Parkingi">
+        <item name="TODO">
+            <!--TODO: Paid car parks, parking ticket vending machines, maybe sth else...-->
         </item>
     </group>
 </presets>
