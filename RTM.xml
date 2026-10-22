@@ -23,21 +23,22 @@
             <combo key="network" text="Networks" pl.text="Sieci"
                    values="Rzeszowski Transport Miejski,Rzeszowski Transport Miejski;Międzygminna Komunikacja Samochodowa"/>
             <combo key="network:short" text="Networks (short names)" pl.text="Sieci (skróty)" values="RTM,RTM;MKS"/>
-            <combo key="network:wikidata" text="Network (Wikidata)" pl.text="Sieć (Wikidata)" values="Q141627938"/>
+            <combo key="network:wikidata" text="Network (Wikidata)" pl.text="Sieć (Wikidata)" values="Q141627938"
+                   editable="false"/>
             <combo key="departures_board" text="Departures board" pl.text="Tablica z rozkładem jazdy"
                    values="timetable,timetable;realtime,no"/>
             <text key="route_ref" text="Route refs (RTM and MKS)" pl.text="Numery linii (RTM i MKS)"/>
-            <combo key="zone:RTM" text="Zone (RTM)" pl.text="Strefa (RTM)" values="A,B"/>
+            <combo key="zone:RTM" text="Zone (RTM)" pl.text="Strefa (RTM)" values="A,B" editable="false"/>
 
             <space/>
             <check key="passenger_information_display" text="Passenger information system"
                    pl.text="Tablica elektroniczna"/>
-            <combo key="traffic_sign" text="Traffic sign" pl.text="Znak drogowy">
+            <combo key="traffic_sign" text="Traffic sign" pl.text="Znak drogowy" editable="false">
                 <list_entry value="PL:D-15" display_value="yes" pl.display_value="tak"/>
                 <list_entry value="no" display_value="no" pl.display_value="nie"/>
             </combo>
-            <combo key="pole" text="Pole" pl.text="Słupek" values="traffic_sign,totem,no"/>
-            <combo key="website" text="Real-time timetable website" pl.text="Link do e-tablicy"/>
+            <combo key="pole" text="Pole" pl.text="Słupek" values="traffic_sign,totem,no" editable="false"/>
+            <text key="website" text="Real-time timetable website" pl.text="Link do e-tablicy"/>
 
             <space/>
             <check key="check_date" text="Check date" pl.text="Data sprawdzenia"/>
@@ -47,7 +48,8 @@
             <check key="bin" text="Trash bin" pl.text="Śmietnik"/>
             <check key="lit" text="Lit" pl.text="Oświetlony"/>
             <check key="tactile_paving" text="Tactile paving" pl.text="Ścieżka dotykowa"/>
-            <combo key="wheelchair" text="Wheelchair access" pl.text="Dostęp na wózku" values="yes,limited,no"/>
+            <combo key="wheelchair" text="Wheelchair access" pl.text="Dostęp na wózku" values="yes,limited,no"
+                   editable="false"/>
 
             <space/>
             <check key="request_stop" text="On demand" pl.text="Na żądanie"/>
