@@ -4,7 +4,7 @@
          description="Preset for Rzeszowski Transport Miejski - public transport network in Rzeszów."
          shortdescription="Rzeszowski Transport Miejski"
          author="Dawid2849, Paweł_M"
-         version="0.1"
+         version="0.2"
          baselanguage="English">
     <group name="Buses" pl.name="Autobusy">
         <item name="RTM Bus stop" pl.name="Przystanek RTM" icon="presets/transport/bus_small.svg" type="node">
@@ -37,6 +37,7 @@
                 <list_entry value="no" display_value="no" pl.display_value="nie"/>
             </combo>
             <combo key="pole" text="Pole" pl.text="Słupek" values="traffic_sign,totem,no"/>
+            <combo key="website" text="Real-time timetable website" pl.text="Link do e-tablicy"/>
 
             <space/>
             <check key="check_date" text="Check date" pl.text="Data sprawdzenia"/>
