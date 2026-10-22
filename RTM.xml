@@ -2,8 +2,10 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
          icon="https://rtm.erzeszow.pl/wp-content/uploads/2025/05/cropped-cropped-favicon_ZTM-02-32x32.png"
          description="Presets for Rzeszowski Transport Miejski"
+         shortdescription="Rzeszowski Transport Miejski"
          author="Dawid2849"
-         version="0.1">
+         version="0.1"
+         baselanguage="English">
     <group name="Buses" pl.name="Autobusy">
         <item name="RTM Bus stop" pl.name="Przystanek RTM" icon="presets/transport/bus_small.svg" type="node">
             <link wiki="Tag:highway=bus_stop" />
