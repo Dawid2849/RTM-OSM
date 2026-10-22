@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+         icon="https://rtm.erzeszow.pl/wp-content/uploads/2025/05/cropped-cropped-favicon_ZTM-02-32x32.png"
+         description="Presets for Rzeszowski Transport Miejski"
+         author="Dawid2849"
+         version="0.1">
+    <group name="Buses" pl.name="Autobusy">
+        <item name="RTM Bus stop" pl.name="Przystanek RTM" icon="presets/transport/bus_small.svg" type="node">
+            <link wiki="Tag:highway=bus_stop" />
+            <key key="highway" value="bus_stop"/>
+            <key key="bus" value="yes"/>
+            <key key="operator" value="Zarząd Transportu Miejskiego w Rzeszowie"/>
+            <key key="operator:short" value="ZTM Rzeszów"/>
+            <key key="operator:type" value="public"/>
+            <key key="operator:wikidata" value="Q141755570"/>
+
+            <text key="name" text="Bus Stop name" pl.text="Nazwa przystanku"/>
+            <text key="ref" text="Stop ID" pl.text="Numer słupka"/>
+            <text key="local_ref" text="Stop number" pl.text="Numer przystanku"/>
+            <combo key="network" text="Networks" pl.text="Sieci"
+                   values="Rzeszowski Transport Miejski,Rzeszowski Transport Miejski;Międzygminna Komunikacja Samochodowa"/>
+            <combo key="network:short" text="Networks (short names)" pl.text="Sieci (skróty)" values="RTM,RTM;MKS"/>
+            <combo key="network:wikidata" text="Network (Wikidata)" pl.text="Sieć (Wikidata)" values="Q141627938"/>
+            <combo key="departures_board" text="Departures board" pl.text="Tablica z rozkładem jazdy"
+                   values="timetable,timetable;realtime,no"/>
+            <text key="route_ref" text="Route refs (RTM and MKS)" pl.text="Numery linii (RTM i MKS)"/>
+            <combo key="zone:RTM" text="Zone (RTM)" pl.text="Strefa (RTM)" values="A,B"/>
+
+            <space />
+            <check key="passenger_information_display" text="Passenger information system" pl.text="Tablica elektroniczna"/>
+            <combo key="traffic_sign" text="Traffic sign" pl.text="Znak drogowy" values="PL:D-15,no"/>
+            <combo key="pole" text="Pole" pl.text="Słupek" values="traffic_sign,totem,no"/>
+
+            <space />
+            <check key="shelter" text="Shelter" pl.text="Wiata"/>
+            <check key="covered" text="Covered (ex. shelter)" pl.text="Zadaszenie (poza wiatą)"/>
+            <check key="bench" text="Bench" pl.text="Ławka"/>
+            <check key="bin" text="Trash bin" pl.text="Śmietnik"/>
+            <check key="lit" text="Lit" pl.text="Oświetlony"/>
+            <check key="tactile_paving" text="Tactile paving" pl.text="Ścieżka dotykowa"/>
+
+            <space />
+            <check key="request_stop" text="On demand" pl.text="Na żądanie"/>
+
+            <space />
+            <text key="gtfs:stop_id" text="GTFS Stop ID"/>
+            <text key="gtfs:stop_name" text="GTFS Stop Name"/>
+        </item>
+    </group>
+</presets>
