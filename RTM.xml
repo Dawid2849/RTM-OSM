@@ -6,7 +6,7 @@
          author="Dawid2849, Paweł_M"
          version="0.2"
          baselanguage="English">
-    <group name="Buses" pl.name="Autobusy">
+    <group name="Rzeszów - Buses" pl.name="Rzeszów - Autobusy">
         <item name="RTM Bus stop" pl.name="Przystanek RTM" icon="presets/transport/bus_small.svg" type="node">
             <link wiki="Tag:highway=bus_stop"/>
             <key key="highway" value="bus_stop"/>
@@ -65,7 +65,7 @@
 
     <separator/>
 
-    <group name="Car parks" pl.name="Parkingi">
+    <group name="Rzeszów - Car parks" pl.name="Rzeszów - Parkingi">
         <item name="TODO">
             <!--TODO: Paid car parks, parking ticket vending machines, maybe sth else...-->
         </item>
