@@ -4,7 +4,7 @@
          description="Preset for Rzeszowski Transport Miejski - public transport network in Rzeszów."
          shortdescription="Rzeszowski Transport Miejski"
          author="Dawid2849, Paweł_M"
-         version="0.3"
+         version="0.4"
          baselanguage="English">
     <group name="Rzeszów - Buses" pl.name="Rzeszów - Autobusy">
         <item name="RTM Bus stop" pl.name="Przystanek RTM" icon="presets/transport/bus_small.svg" type="node">
