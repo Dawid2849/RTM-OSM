@@ -4,7 +4,7 @@
          description="Preset for Rzeszowski Transport Miejski - public transport network in Rzeszów."
          shortdescription="Rzeszowski Transport Miejski"
          author="Dawid2849, Paweł_M"
-         version="0.2"
+         version="0.3"
          baselanguage="English">
     <group name="Rzeszów - Buses" pl.name="Rzeszów - Autobusy">
         <item name="RTM Bus stop" pl.name="Przystanek RTM" icon="presets/transport/bus_small.svg" type="node">
@@ -28,7 +28,8 @@
             <combo key="departures_board" text="Departures board" pl.text="Tablica z rozkładem jazdy"
                    values="timetable,timetable;realtime,no"/>
             <text key="route_ref" text="Route refs (RTM and MKS)" pl.text="Numery linii (RTM i MKS)"/>
-            <combo key="zone:RTM" text="Zone (RTM)" pl.text="Strefa (RTM)" values="A,B" editable="false"/>
+            <check key="zone:RTM" text="Is the bus stop in zone B?" pl.text="Czy przystanek znajduje się w strefie B?"
+                   value_on="B" value_off="A" default="off"/>
 
             <space/>
             <check key="passenger_information_display" text="Passenger information system"
