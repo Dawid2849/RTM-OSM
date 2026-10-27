@@ -65,9 +65,38 @@
 
     <separator/>
 
-    <group name="Rzeszów - Car parks" pl.name="Rzeszów - Parkingi">
-        <item name="TODO">
-            <!--TODO: Paid car parks, parking ticket vending machines, maybe sth else...-->
+    <group name="Rzeszów - Parking" pl.name="Rzeszów - Parkingi">
+        <item name="RTM Bicycle Parking (Bike&amp;Ride)" pl.name="Parking Rowerowy RTM (Bike&amp;Ride)">
+            <link wiki="Tag:amenity=bicycle_parking"/>
+            <key key="alcohol" value="no"/>
+            <key key="amenity" value="bicycle_parking"/>
+            <key key="bicycle_parking" value="shed"/>
+            <key key="bike_ride" value="yes"/>
+            <key key="building" value="shed"/>
+            <key key="building:levels" value="1"/>
+            <key key="covered" value="yes"/>
+            <key key="fee" value="no"/>
+            <key key="lit" value="yes"/>
+            <key key="network" value="Rzeszowski Transport Miejski"/>
+            <key key="network:short" value="RTM Rzeszów"/>
+            <key key="network:wikidata" value="Q141627938"/>
+            <key key="operator" value="Zarząd Transportu Miejskiego w Rzeszowie"/>
+            <key key="operator:short" value="ZTM Rzeszów"/>
+            <key key="operator:type" value="public"/>
+            <key key="operator:wikidata" value="Q141755570"/>
+            <key key="owner" value="Gmina Miasto Rzeszów"/>
+            <key key="owner:wikidata" value="Q598"/>
+            <key key="smoking" value="no"/>
+            <key key="surveillance" value="indoor"/>
+            <key key="surveillance:type" value="camera"/>
+            <key key="surveillance:zone" value="parking"/>
+
+            <text key="capacity" text="Capacity" pl.text="Liczba miejsc"/>
+            <text key="check_date" text="Check date" pl.text="Data sprawdzenia"/>
+            <text key="name" text="Parking name" pl.text="Nazwa parkingu"/>
         </item>
+
+        <!--TODO: Paid car parks, parking ticket vending machines, maybe sth else...-->
+
     </group>
 </presets>
